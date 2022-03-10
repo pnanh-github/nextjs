@@ -13,6 +13,13 @@ const posts = [
     vnd: 10000000,
     image: "https://cdn.tgdd.vn/Products/Images/42/114115/iphone-x-64gb-hh-600x600.jpg",
   },
+  {
+    id: "3",
+    name: "Apple Pencil",
+    price: 10000,
+    vnd: 2600000,
+    image: "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcThvr4RnRBirJyhuu5IFUDVItmMfSYB3dpCNAm5k52vjY7nuUYP3IKiuXsC--sQZn6TzmFzeB3lOw&usqp=CAc",
+  },
 ];
 export default (req, res) => {
   res.statusCode = 200;
