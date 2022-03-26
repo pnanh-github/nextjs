@@ -2,7 +2,7 @@ var db = require("../../../database/dbHelper");
 const axios = require("axios");
 
 const sendNotification = (req, res, next) => {
-  var sql = "select token from token where status=1";
+  var sql = "select token from token";
   db.all(sql, (err, rows) => {
     if (err) {
       return res.status(400).json({ error: err.message });
