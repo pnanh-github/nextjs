@@ -15,6 +15,7 @@ const token = (req, res, next) => {
       }
     });
   }
+
   function addToken() {
     var device_token = req.body.token;
     var type = req.body.type;
