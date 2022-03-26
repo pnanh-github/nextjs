@@ -20,12 +20,24 @@ const token = (req, res, next) => {
     var device_token = req.body.token;
     var type = req.body.type;
     var params = [device_token, type];
-    var sql = "INSERT INTO token(token, type, status) VALUES(?,?,1)";
-    db.run(sql, params, (result, err) => {
+    // var sql = "INSERT INTO token(token, type, status) VALUES(?,?,1)";
+    var sql = "select * from token where token=?";
+    db.all(sql, [device_token], (err, rows) => {
       if (err) {
         return res.status(400).json({ error: err.message });
       } else {
-        return res.status(200).json({ message: "successful" });
+        if (rows.length == 0) {
+          sql = "INSERT INTO token(token, type, status) VALUES(?,?,1)";
+          db.run(sql, params, (result, err) => {
+            if (err) {
+              return res.status(400).json({ error: err.message });
+            } else {
+              return res.status(200).json({ message: "successful" });
+            }
+          });
+        } else {
+          return res.status(400).json({ error: "duplicate" });
+        }
       }
     });
   }
