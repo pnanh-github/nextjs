@@ -15,10 +15,10 @@ const posts = [
   },
   {
     id: "3",
-    name: "Apple Pencil 1",
-    price: 1700,
-    vnd: 1700000,
-    image: "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcThvr4RnRBirJyhuu5IFUDVItmMfSYB3dpCNAm5k52vjY7nuUYP3IKiuXsC--sQZn6TzmFzeB3lOw&usqp=CAc",
+    name: "Bút Cảm Ứng WiWU Picasso Active Stylus P339 Universal",
+    price: 700,
+    vnd: 700000,
+    image: "https://salt.tikicdn.com/cache/400x400/ts/product/e2/b8/2d/e98fdcd3b293353f6f1f095986e66d2d.jpg",
   },
   {
     id: "4",
