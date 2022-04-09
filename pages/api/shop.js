@@ -15,9 +15,9 @@ const posts = [
   },
   {
     id: "3",
-    name: "Apple Pencil",
-    price: 10000,
-    vnd: 2600000,
+    name: "Apple Pencil 1",
+    price: 1700,
+    vnd: 1700000,
     image: "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcThvr4RnRBirJyhuu5IFUDVItmMfSYB3dpCNAm5k52vjY7nuUYP3IKiuXsC--sQZn6TzmFzeB3lOw&usqp=CAc",
   },
   {
